@@ -3,9 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Bridge People Network</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    
+    <!-- Browser UI -->
+    <div class="browser-interface">
+        <div class="browser-header">
+            <div class="browser-controls">
+                <div class="control-btn close"></div>
+                <div class="control-btn minimize"></div>
+                <div class="control-btn maximize"></div>
+            </div>
+            <div class="browser-title">BPNetwork Website</div>
+        </div>
+        <div class="browser-toolbar">
+            <div class="navigation-controls">
+                <button class="nav-btn"><i class="fas fa-arrow-left"></i></button>
+                <button class="nav-btn"><i class="fas fa-arrow-right"></i></button>
+                <button class="nav-btn"><i class="fas fa-redo"></i></button>
+            </div>
+            <div class="address-bar">
+                <div class="security-icon">VC</div>
+                <span class="url">www.bpnetwork.com</span>
+            </div>
+            <nav class="main-nav">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#profile" class="nav-link">Our Profile</a>
+                <a href="#portfolio" class="nav-link">Portofolio</a>
+                <a href="#contact" class="nav-link">Message Us</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Konten Utama -->
+    <main class="main-content">
+        <!-- Welcome Section -->
+        <section id="home" class="welcome-section">
+            <div class="container">
+                <h1 class="welcome-title">Hi <span id="userName">Andri</span>, Welcome To Our Website</h1>
+                <p class="welcome-subtitle">Ini adalah contoh website perusahaan</p>
+                <div class="hero-placeholder">
+                    <img src="img/img1.jpg" class="img1" alt="Hero Image" width="1366" height="576">
+                </div>
+            </div>
+        </section>
+
+        <!-- Profil Section -->
+        <section id="profile" class="profile-section">
+            <!-- Banner Photo -->
+            <div class="profile-banner">
+                <div class="banner-overlay">
+                    <div class="container">
+                        <h1 class="banner-title">Our Company Profile</h1>
+                        <p class="banner-subtitle">Building the future through innovation and excellence</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tentang Perusahaan -->
+            <div class="about-section">
+                <div class="container">
+                    <div class="about-content">
+                        <div class="about-text">
+                            <h2 class="section-title">About Our Company</h2>
+                            <p class="about-description">
+                                Founded in 2025, we are a leading technology company dedicated to transforming businesses through innovative digital solutions. Our team of experts combines creativity with technical excellence to deliver outstanding results for our clients.
+                            </p>
+                            <p class="about-description">
+                                With offices in Taliwang, we serve clients across Indonesia and Southeast Asia. Our commitment to quality, innovation, and customer satisfaction has made us a trusted partner for businesses of all sizes.
+                            </p>
+                            <div class="company-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">500+</div>
+                                    <div class="stat-label">Happy Clients</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">1000+</div>
+                                    <div class="stat-label">Projects Completed</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">50+</div>
+                                    <div class="stat-label">Team Members</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-image">
+                            <img src="img/img2.jpg" alt="Company Building" class="about-img" style="max-width:100%;border-radius:12px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visi & Misi -->
+            <div class="vision-mission-section">
+                <div class="container">
+                    <div class="vm-grid">
+                        <div class="vm-card vision">
+                            <div class="vm-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3>Our Vision</h3>
+                            <p>To become the leading digital transformation partner in Southeast Asia, empowering businesses to thrive in the digital age through innovative technology solutions and exceptional service delivery.</p>
+                        </div>
+                        <div class="vm-card mission">
+                            <div class="vm-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3>Our Mission</h3>
+                            <p>To provide cutting-edge digital solutions that drive business growth, enhance operational efficiency, and create lasting value for our clients while fostering a culture of innovation and continuous improvement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Headquarters Section -->
+            <div class="headquarters-section">
+                <div class="container">
+                    <h2 class="section-title">Our Headquarters</h2>
+                    <div class="locations-grid">
+                        <div class="location-item">
+                            <div class="location-circle">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h3 class="location-name">Taliwang, Sumbawa Barat</h3>
+                            <p class="location-desc">Main Office & Headquarters</p>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Message Us</h2>
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <form id="messageForm">
+                            <div class="form-group">
+                                <label for="nama">Nama</label>
+                                <input type="text" id="nama" name="nama" placeholder="Nama" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tanggalLahir">Tanggal Lahir</label>
+                                <div class="date-input-wrapper">
+                                    <input type="date" id="tanggalLahir" name="tanggalLahir" value="" required>
+                                    <!-- <i class="fas fa-calendar"></i> -->
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Jenis Kelamin</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="jenisKelamin" value="Laki-Laki" checked>
+                                        <span class="radio-custom"></span>
+                                        Laki-Laki
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="jenisKelamin" value="Perempuan">
+                                        <span class="radio-custom"></span>
+                                        Perempuan
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="pesan">Pesan</label>
+                                <textarea id="pesan" name="pesan" placeholder="Pesan" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                    </div>
+                    <div class="message-display">
+                        <div class="current-time" id="currentTime"></div>
+                        <div class="submitted-message" id="submittedMessage">
+                            <div class="message-item">
+                                <strong>Nama:</strong> Andrianzah
+                            </div>
+                            <div class="message-item">
+                                <strong>Tanggal Lahir:</strong> 01/11/1997
+                            </div>
+                            <div class="message-item">
+                                <strong>Jenis Kelamin:</strong> Laki-Laki
+                            </div>
+                            <div class="message-item">
+                                <strong>Pesan:</strong> Websitenya sangat bagus
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">Created By Andrianzah</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
