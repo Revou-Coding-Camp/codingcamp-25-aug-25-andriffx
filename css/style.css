@@ -190,7 +190,7 @@ body {
     justify-content: center;
     margin: 0 auto;
     max-width: 800px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);    
 }
 
 .placeholder-text {
@@ -475,6 +475,12 @@ body {
     color: white;
     font-size: 2rem;
     box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+}
+
+.img1 {
+    display:block;
+    max-width:100%;
+    height:auto;
 }
 
 .location-name {
