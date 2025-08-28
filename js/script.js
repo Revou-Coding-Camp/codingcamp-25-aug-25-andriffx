@@ -84,11 +84,11 @@ function initializeDynamicName() {
     let userName = localStorage.getItem('userName');
     
     if (!userName) {
-        userName = prompt('Masukkan nama Anda:', 'Andri');
+        userName = prompt('Masukkan nama Anda:', '');
         if (userName && userName.trim()) {
             localStorage.setItem('userName', userName.trim());
         } else {
-            userName = 'Andri'; // Default name
+            userName = 'Njenengan'; // Default name
         }
     }
     
